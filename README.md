@@ -1,1 +1,2 @@
-Personal portfolio test del curso de desarrollo web online de @Platzi.
+# Personal portfolio
+Portafolio personal para el Curso de Desarrollo Web Online en @Platzi.
