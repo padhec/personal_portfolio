@@ -8,84 +8,176 @@
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
   </head>
   <body>
-    <header>
-      <nav>
-        <figure>
-          <a href="#"><img src="./img/logo.png" alt="Logo" /></a>
-        </figure>
-        <ul>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Experiencia</a></li>
-          <li><a href="#">Trabajemos juntos</a></li>
+    <!-- Inicio header -->
+    <header class="header-container">
+      <figure class="header-figure">
+        <a class="header-figure__link" href="#"
+          ><img class="header-figure__logo" src="./img/logo.png" alt="Logo"
+        /></a>
+      </figure>
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#experience">Experiencia</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="header-nav__link" href="#work-together"
+              >Trabajemos juntos</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
-    <section>
-      <h1>
+    <!-- Inicio hero -->
+    <section class="hero-container">
+      <h1 class="hero-title">
         Hola! Soy <strong>Héctor Padilla</strong><br />
         <strong>Diseñador Gráfico</strong><br />
         y <strong>Front-end Padawan</strong>
       </h1>
-      <figure><img src="./img/hero.png" alt="Hero" /></figure>
+      <figure class="hero-figure">
+        <img class="hero-figure__hero" src="./img/hero.png" alt="Hero" />
+      </figure>
     </section>
-    <section>
-      <h2>Portafolio (Proyectos Destacados)</h2>
-      <article>
-        <h3>Book PADHEC 2020</h3>
-        <h6>In Design | Photoshop | Illustrator</h6>
-        <p>
+    <!-- Inicio portfolio -->
+    <section class="portfolio-container" id="portfolio">
+      <h2 class="portfolio-title">Portafolio (Proyectos Destacados)</h2>
+      <article class="portfolio-project">
+        <h3 class="portfolio-project__title">Book PADHEC 2020</h3>
+        <h6 class="portfolio-project__subtitle">
+          In Design | Photoshop | Illustrator
+        </h6>
+        <p class="portfolio-project__date">
           <small><strong>Fecha</strong> 00.00.00</small>
         </p>
-        <p>
+        <p class="portfolio-project__url">
           <small><strong>Conocer más en</strong> www.behance.net/padhec</small>
         </p>
-        <p>
+        <p class="portfolio-project__content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maiores
           unde dicta minus natus veritatis, enim labore. Amet, in? Minus
           deleniti aperiam qui omnis consequuntur assumenda sit voluptatum esse
           impedit.
         </p>
-        <figure>
-          <img src="./img/book-padhec-20.png" alt="Book PADHEC 2020" />
+        <figure class="portfolio-project-figure">
+          <img
+            class="portfolio-project-figure__img"
+            src="./img/book-padhec-20.png"
+            alt="Book PADHEC 2020"
+          />
         </figure>
       </article>
-      <article>
-        <h3>Pizza Truck</h3>
-        <h6>Cinema 4D | Photoshop | After Effects</h6>
-        <p>
+      <article class="portfolio-project">
+        <h3 class="portfolio-project__title">115 años Ericsson México</h3>
+        <h6 class="portfolio-project__subtitle">Illustrator</h6>
+        <p class="portfolio-project__date">
           <small><strong>Fecha</strong> 00.00.00</small>
         </p>
-        <p>
+        <p class="portfolio-project__url">
           <small><strong>Conocer más en</strong> www.behance.net/padhec</small>
         </p>
-        <p>
+        <p class="portfolio-project__content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maiores
           unde dicta minus natus veritatis, enim labore. Amet, in? Minus
           deleniti aperiam qui omnis consequuntur assumenda sit voluptatum esse
           impedit.
         </p>
-        <figure>
-          <img src="./img/pizza-truck.png" alt="Pizza Truck" />
+        <figure class="portfolio-project-figure">
+          <img
+            class="portfolio-project-figure__img"
+            src="./img/115-ericsson-mx.png"
+            alt="115 Años Ericsson México"
+          />
+        </figure>
+      </article>
+      <article class="portfolio-project">
+        <h3 class="portfolio-project__title">Pizza Truck</h3>
+        <h6 class="portfolio-project__subtitle">
+          Cinema 4D | Photoshop | After Effects
+        </h6>
+        <p class="portfolio-project__date">
+          <small><strong>Fecha</strong> 00.00.00</small>
+        </p>
+        <p class="portfolio-project__url">
+          <small><strong>Conocer más en</strong> www.behance.net/padhec</small>
+        </p>
+        <p class="portfolio-project__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maiores
+          unde dicta minus natus veritatis, enim labore. Amet, in? Minus
+          deleniti aperiam qui omnis consequuntur assumenda sit voluptatum esse
+          impedit.
+        </p>
+        <figure class="portfolio-project-figure">
+          <img
+            class="portfolio-project-figure__img"
+            src="./img/pizza-truck.png"
+            alt="Pizza Truck"
+          />
         </figure>
       </article>
     </section>
-    <section>
-      <h2>Más sobre mi experiencia</h2>
-      <article>
-        <figure><img src="./img/card_exp_1.png" alt="Experiencia 1" /></figure>
-        <h3>Subtítulo</h3>
-        <p>
+    <!-- Inicio experiencia -->
+    <section class="experience-container" id="experience">
+      <h2 class="experience-title">Más sobre mi experiencia</h2>
+      <article class="experience-article">
+        <figure class="experience-article-figure">
+          <img
+            class="experience-article-figure__img"
+            src="./img/card_exp_1.png"
+            alt="Experiencia 1"
+          />
+        </figure>
+        <h3 class="experience-article__title">Título</h3>
+        <p class="experience-article__content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
           voluptatem quia repellendus laborum illum temporibus rem dolorum
           quidem velit quibusdam ipsum debitis, earum recusandae, ad nam maiores
           labore placeat perferendis.
         </p>
-        <a href="#">Leer más</a>
+        <a class="experience-article__url" href="#" target="_blank">Leer más</a>
+      </article>
+      <article class="experience-article">
+        <figure class="experience-article-figure">
+          <img
+            class="experience-article-figure__img"
+            src="./img/card_exp_1.png"
+            alt="Experiencia 1"
+          />
+        </figure>
+        <h3 class="experience-article__title">Título</h3>
+        <p class="experience-article__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          voluptatem quia repellendus laborum illum temporibus rem dolorum
+          quidem velit quibusdam ipsum debitis, earum recusandae, ad nam maiores
+          labore placeat perferendis.
+        </p>
+        <a class="experience-article__url" href="#" target="_blank">Leer más</a>
+      </article>
+      <article class="experience-article">
+        <figure class="experience-article-figure">
+          <img
+            class="experience-article-figure__img"
+            src="./img/card_exp_1.png"
+            alt="Experiencia 1"
+          />
+        </figure>
+        <h3 class="experience-article__title">Título</h3>
+        <p class="experience-article__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          voluptatem quia repellendus laborum illum temporibus rem dolorum
+          quidem velit quibusdam ipsum debitis, earum recusandae, ad nam maiores
+          labore placeat perferendis.
+        </p>
+        <a class="experience-article__url" href="#" target="_blank">Leer más</a>
       </article>
     </section>
-    <section>
-      <form action="#">
-        <h3>¿Creamos algo juntos?</h3>
+    <!-- Inicio work together -->
+    <section class="work-together-container" id="work-together">
+      <form class="work-together__form" action="#">
+        <h3 class="work-together__title">¿Creamos algo juntos?</h3>
         <label for="mail">
           <input
             type="email"
@@ -93,10 +185,11 @@
             id="mail"
             placeholder="Déjame tu email"
           />
-          <button type="submit">Enviar</button>
+          <button class="work-together__button" type="submit">Enviar</button>
         </label>
       </form>
     </section>
-    <footer>Footer</footer>
+    <!-- Inicio footer -->
+    <footer class="footer-container">Footer</footer>
   </body>
 </html>
