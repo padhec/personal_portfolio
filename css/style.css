@@ -1,0 +1,54 @@
+/* General */
+
+:root {
+  --additional-color: #d9d9d6;
+  --content-color: #63666a;
+  --titles-color: #84bd00;
+  --subtitles-color: #63666a;
+  --white-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  line-height: 3.5rem;
+  font-size: 3rem;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+}
+
+p {
+  font-family: 'Esteban', serif;
+}
+
+/* Header */
+
+/* Hero */
+
+.hero-title {
+  color: var(--white-color);
+}
+
+.hero-title span {
+  color: var(--titles-color);
+  font-weight: 900;
+}
+
+/* Portfolio */
+
+/* Experiencia */
+
+/* Work together */
+
+/* Footer */
