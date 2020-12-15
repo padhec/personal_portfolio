@@ -28,13 +28,32 @@ html {
   font-size: 62.5%;
 }
 
+ul {
+  list-style: none;
+}
+
 p {
   font-family: 'Esteban', serif;
 }
 
 /* Header */
 
+.header-container {
+  background-color: var(--additional-color);
+}
+
+.header-container a {
+  color: var(--titles-color);
+}
+
 /* Hero */
+
+.hero-container {
+  background-color: var(--additional-color);
+  background-image: url('../img/hero.png');
+  background-size: cover;
+  height: 30rem;
+}
 
 .hero-title {
   color: var(--white-color);
@@ -46,6 +65,13 @@ p {
 }
 
 /* Portfolio */
+
+.portfolio-project {
+  border: 0.15rem solid var(--additional-color);
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem;
+}
 
 /* Experiencia */
 
