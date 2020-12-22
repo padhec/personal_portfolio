@@ -468,7 +468,8 @@ strong {
     bottom: 0;
     /* height: 100vh; */
     position: fixed;
-    left: -100vw;
+    left: 0;
+    /* left: -100vw; */
     top: 0;
     transition: 0.3s;
     width: 100vw;
@@ -476,7 +477,8 @@ strong {
   }
 
   .header-nav.active-nav {
-    left: 0;
+    /* left: 0; */
+    left: -100vw;
   }
 
   .hero-container {

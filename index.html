@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- Menu button -->
-    <i class="icon-menu burger-button"></i>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <!-- Inicio header -->
     <header class="header-container">
       <div class="container">
@@ -228,7 +228,7 @@
         <article class="experience-article">
           <script
             type="text/javascript"
-            src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=iVL3SFUfQK-gLaxLGOTH57ypKD48C9YcZozH2r3VPTP8ChpXtGfHIGSb4oHkFC2jrPsIjWvGfqPWsgTjU7gCTbZDdQRa-Wok2od7ceQ-vpzVayZZbe_HBITidtvDr5ao5hi5P59CelO-bcoMSvYCSmM31L23k2rSZdRWyjC3FslMQ-1FDCNdKvBdLVe5NuoeDVJRD53oXLZ8ENEQ_iiwoxHOj0Q4j2LmJroJKjJSMQDd3I9g4Wo6Vo9CEKdzfGZU"
+            src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=4Q0r1Nbl-8mxlgBzIEEz5JZH6kYmOJEKlbKDeZPqr1DJ5bWjmMwMoeUmzsYlji-yAXQuGJ6xJfZsYguH_bAB6za48U4qOPBLyOg3mpkSP82R-KLBm4MC6EZqpwvT_0ZmrKNDNpWBSEeiYTPMCcsI6bT_yc72EC9PG_Z0SW-2x4Qpqz4ItiAn0fld8G-MI15Df70IbQMoWHYSwCLgbSTzZYpLW-PdduOOpZTAgJaHBUtjlpHDEEAx64bkDPHjqqo7"
             charset="UTF-8"
           ></script>
           <link
@@ -386,5 +386,29 @@
         </section>
       </div>
     </footer>
+    <!-- JavaScript -->
+    <script>
+      // console.log('Hola mundo');
+      const menu = document.querySelector('.header-nav');
+      const burgerButton = document.querySelector('#burger-menu');
+      const movil = window.matchMedia('screen and (max-width: 480px)');
+      movil.addListener(validation);
+      function validation(event) {
+        console.log(event);
+        if (event.matches) {
+          burgerButton.addEventListener('click', hideShow);
+        } else {
+          burgerButton.removeEventListener('click', hideShow);
+        }
+      }
+      function hideShow() {
+        if (menu.classList.contains('active-nav')) {
+          menu.classList.remove('active-nav');
+        } else {
+          // menu.classList.toggle('active-nav');
+          menu.classList.add('active-nav');
+        }
+      }
+    </script>
   </body>
 </html>
