@@ -1,3 +1,37 @@
+/* Fuente */
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?teoqnh');
+  src: url('../fonts/icomoon.eot?teoqnh#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?teoqnh') format('truetype'),
+    url('../fonts/icomoon.woff?teoqnh') format('woff'),
+    url('../fonts/icomoon.svg?teoqnh#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: '\e900';
+}
+
 /* General */
 
 :root {
@@ -23,6 +57,7 @@ h1 {
   letter-spacing: 0.5rem;
   line-height: 5rem;
   text-align: center;
+  text-shadow: 1px 3px 3px black;
 }
 
 h2 {
@@ -54,6 +89,22 @@ strong {
   margin: 0 auto;
   max-width: 1000px;
   /* width: 100%; */
+}
+
+.burger-button {
+  color: var(--white-color);
+  background-color: rgba(132, 189, 0, 0.8);
+  border-radius: 50%;
+  display: none;
+  font-size: 1.3rem;
+  height: 4rem;
+  left: 1.5rem;
+  line-height: 4rem;
+  position: fixed;
+  text-align: center;
+  top: 1.5rem;
+  width: 4rem;
+  z-index: 1;
 }
 
 /* Header */
@@ -398,6 +449,34 @@ strong {
     font-size: 2.5rem;
     letter-spacing: 0.2rem;
     line-height: 3rem;
+  }
+
+  .burger-button {
+    display: block;
+    z-index: 2;
+  }
+
+  .header-container a {
+    color: var(--white-color);
+    font-size: 2.5rem;
+    margin: 3rem auto;
+    text-decoration: underline;
+  }
+
+  .header-nav {
+    background-color: rgba(99, 102, 106, 0.9);
+    bottom: 0;
+    /* height: 100vh; */
+    position: fixed;
+    left: -100vw;
+    top: 0;
+    transition: 0.3s;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  .header-nav.active-nav {
+    left: 0;
   }
 
   .hero-container {
